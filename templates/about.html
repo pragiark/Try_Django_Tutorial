@@ -3,8 +3,10 @@
     <h1>About us</h1>
     <p>Read about as</p>
 
+    <h3>{{ title }}</h3>
     <p>
-    {{ my_text }}, {{ my_number }}, {{ my_list }}
+    {{ title }}, {{ my_number }}, {{ my_list }}
+    {{ my_html|striptags|slugify }}
     </p>
 <ul>
     <li>Item 1</li>
