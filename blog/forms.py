@@ -1,15 +1,25 @@
 from django import forms
 
-from models import Article
+from .models import Article
 
-class ModelForm(forms.ModelForm):
-    title = forms.CharField()
-    content = forms.Textarea()
-    activate = forms.BooleanField()
+# class ModelForm(forms.ModelForm):
+#     title = forms.CharField()
+#     content = forms.Textarea()
+#     activate = forms.BooleanField()
     
+#     class Meta:
+#         model = Article
+#         fields = [
+#             'title',
+#             'content'
+#         ]
+
+
+class ArticleModelForm(forms.ModelForm):
     class Meta:
         model = Article
         fields = [
             'title',
-            'content'
+            'content',
+            'activate',
         ]

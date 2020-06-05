@@ -11,7 +11,6 @@ from products.views import (
 
 app_name = 'products'
 urlpatterns = [
-    # path('product', product_detail_view),
     # path('admin/', admin.site.urls),
     # path('initial/', render_initial_data),
     path('', product_list_view, name='product-list'),

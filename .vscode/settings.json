@@ -1,3 +1,8 @@
 {
-    "python.pythonPath": "trydjango_env\\Scripts\\python.exe"
+    "python.pythonPath": "trydjango_env\\Scripts\\python.exe",
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": true,
+    "python.linting.banditEnabled": false,
+    "python.linting.mypyEnabled": false,
+    "python.linting.pylamaEnabled": false
 }
